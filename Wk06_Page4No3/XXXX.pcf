@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri May 04 17:31:21 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Reset_Onboard" LOCATE = SITE "P38" LEVEL 1;
+COMP "XLXN_10" LOCATE = SITE "P27" LEVEL 1;
+COMP "XLXN_11" LOCATE = SITE "P32" LEVEL 1;
+COMP "XLXN_12" LOCATE = SITE "P40" LEVEL 1;
+COMP "XLXN_13" LOCATE = SITE "P50" LEVEL 1;
+COMP "XLXN_14" LOCATE = SITE "P35" LEVEL 1;
+COMP "XLXN_15" LOCATE = SITE "P29" LEVEL 1;
+COMP "COMM_3" LOCATE = SITE "P51" LEVEL 1;
+COMP "XLXN_8" LOCATE = SITE "P34" LEVEL 1;
+COMP "XLXN_9" LOCATE = SITE "P41" LEVEL 1;
+COMP "Clk_50MHz" LOCATE = SITE "P56" LEVEL 1;
+SCHEMATIC END;
+

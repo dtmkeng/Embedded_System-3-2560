@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/led_4digit/dasd.v -lang verilog -prj led_4digit -o dasd.spl -module dasd -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/led_4digit/dasd.v -lang verilog -prj led_4digit -o dasd.spl -module dasd -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 

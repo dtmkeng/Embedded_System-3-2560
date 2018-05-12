@@ -1,0 +1,9 @@
+[Inputs]
+Clk_50MHz
+Reset_Onboard
+[Outputs]
+=LED_Output[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel MainTest7Seg
+

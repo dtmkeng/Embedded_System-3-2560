@@ -1,0 +1,45 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : adas.vf
+// /___/   /\     Timestamp : 05/04/2018 18:22:05
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/whony/Desktop/Embedded/max_72/adas.vf -w C:/Users/whony/Desktop/Embedded/max_72/adas.sch
+//Design Name: adas
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module adas(Clk_50MHz, 
+            Onboard_Reset, 
+            CLK, 
+            CS, 
+            DIN);
+
+    input Clk_50MHz;
+    input Onboard_Reset;
+   output CLK;
+   output CS;
+   output DIN;
+   
+   wire [31:0] XLXN_1;
+   
+   drv_MAX7219  XLXI_1 (.clk(Clk_50MHz), 
+                       .parallel(XLXN_1[31:0]), 
+                       .clk_out(CLK), 
+                       .data_out(DIN), 
+                       .load(CS));
+   test_Data  XLXI_2 (.Clk_50MHz(Clk_50MHz), 
+                     .rstCount(Onboard_Reset), 
+                     .oData(XLXN_1[31:0]));
+endmodule

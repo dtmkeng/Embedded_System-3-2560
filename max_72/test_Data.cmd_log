@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/max_72/asds.v -lang verilog -prj max_72 -o test_Data.spl -module test_Data -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 test_Data.spl C:/Users/whony/Desktop/Embedded/max_72/test_Data.sym 

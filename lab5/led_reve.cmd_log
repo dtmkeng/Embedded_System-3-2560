@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/lab5/led_reve.v -lang verilog -prj lab5 -o led_reve.spl -module led_reve -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/lab5/led_reve.v -lang verilog -prj lab5 -o led_reve.spl -module led_reve -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/lab5/led_reve.v -lang verilog -prj lab5 -o led_reve.spl -module led_reve -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 

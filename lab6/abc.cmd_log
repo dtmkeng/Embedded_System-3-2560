@@ -1,0 +1,46 @@
+xst -intstyle ise -ifn "C:/Users/whony/Desktop/Embedded/lab6/abc.xst" -ofn "C:/Users/whony/Desktop/Embedded/lab6/abc.syr" 
+xst -intstyle ise -ifn "C:/Users/whony/Desktop/Embedded/lab6/abc.xst" -ofn "C:/Users/whony/Desktop/Embedded/lab6/abc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-2 abc.ngc abc.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o abc_map.ncd abc.ngd abc.pcf 
+par -w -intstyle ise -ol high -mt off abc_map.ncd abc.ncd abc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml abc.twx abc.ncd -o abc.twr abc.pcf -ucf pin.ucf 
+xst -intstyle ise -ifn "C:/Users/whony/Desktop/Embedded/lab6/abc.xst" -ofn "C:/Users/whony/Desktop/Embedded/lab6/abc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-2 abc.ngc abc.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o abc_map.ncd abc.ngd abc.pcf 
+par -w -intstyle ise -ol high -mt off abc_map.ncd abc.ncd abc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml abc.twx abc.ncd -o abc.twr abc.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f abc.ut abc.ncd 
+xst -intstyle ise -ifn "C:/Users/whony/Desktop/Embedded/lab6/abc.xst" -ofn "C:/Users/whony/Desktop/Embedded/lab6/abc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-2 abc.ngc abc.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o abc_map.ncd abc.ngd abc.pcf 
+par -w -intstyle ise -ol high -mt off abc_map.ncd abc.ncd abc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml abc.twx abc.ncd -o abc.twr abc.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f abc.ut abc.ncd 
+xst -intstyle ise -ifn "C:/Users/whony/Desktop/Embedded/lab6/abc.xst" -ofn "C:/Users/whony/Desktop/Embedded/lab6/abc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-2 abc.ngc abc.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o abc_map.ncd abc.ngd abc.pcf 
+par -w -intstyle ise -ol high -mt off abc_map.ncd abc.ncd abc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml abc.twx abc.ncd -o abc.twr abc.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f abc.ut abc.ncd 
+xst -intstyle ise -ifn "C:/Users/whony/Desktop/Embedded/lab6/abc.xst" -ofn "C:/Users/whony/Desktop/Embedded/lab6/abc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-2 abc.ngc abc.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o abc_map.ncd abc.ngd abc.pcf 
+par -w -intstyle ise -ol high -mt off abc_map.ncd abc.ncd abc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml abc.twx abc.ncd -o abc.twr abc.pcf -ucf pin.ucf 
+xst -intstyle ise -ifn "C:/Users/whony/Desktop/Embedded/lab6/abc.xst" -ofn "C:/Users/whony/Desktop/Embedded/lab6/abc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-2 abc.ngc abc.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o abc_map.ncd abc.ngd abc.pcf 
+par -w -intstyle ise -ol high -mt off abc_map.ncd abc.ncd abc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml abc.twx abc.ncd -o abc.twr abc.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f abc.ut abc.ncd 
+xst -intstyle ise -ifn "C:/Users/whony/Desktop/Embedded/lab6/abc.xst" -ofn "C:/Users/whony/Desktop/Embedded/lab6/abc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-2 abc.ngc abc.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o abc_map.ncd abc.ngd abc.pcf 
+par -w -intstyle ise -ol high -mt off abc_map.ncd abc.ncd abc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml abc.twx abc.ncd -o abc.twr abc.pcf -ucf pin.ucf 
+xst -intstyle ise -ifn "C:/Users/whony/Desktop/Embedded/lab6/abc.xst" -ofn "C:/Users/whony/Desktop/Embedded/lab6/abc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-2 abc.ngc abc.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o abc_map.ncd abc.ngd abc.pcf 
+par -w -intstyle ise -ol high -mt off abc_map.ncd abc.ncd abc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml abc.twx abc.ncd -o abc.twr abc.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f abc.ut abc.ncd 

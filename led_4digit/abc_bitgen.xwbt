@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\whony\Desktop\Embedded\led_4digit\abc.ncd
+OUTFILE=C:\Users\whony\Desktop\Embedded\led_4digit\abc.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Users\whony\Desktop\Embedded\led_4digit
+LICENSE=WebPack
+USER_INFO=211527485_0_0_852

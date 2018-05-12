@@ -1,0 +1,8 @@
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/week7_3/aasd.v -lang verilog -prj week7_3 -o Drive_74595.spl -module Drive_74595 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Drive_74595.spl C:/Users/whony/Desktop/Embedded/week7_3/Drive_74595.sym 
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/week7_3/SAa.v -lang verilog -prj week7_3 -o Drive_74595.spl -module Drive_74595 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Drive_74595.spl C:/Users/whony/Desktop/Embedded/week7_3/Drive_74595.sym 
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/week7_3/SAa.v -lang verilog -prj week7_3 -o Drive_74595.spl -module Drive_74595 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Drive_74595.spl C:/Users/whony/Desktop/Embedded/week7_3/Drive_74595.sym 
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/week7_3/SAa.v -lang verilog -prj week7_3 -o Drive_74595.spl -module Drive_74595 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Drive_74595.spl C:/Users/whony/Desktop/Embedded/week7_3/Drive_74595.sym 

@@ -1,0 +1,4 @@
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/week7_3/adv.v -lang verilog -prj week7_3 -o Read_8SIPO.spl -module Read_8SIPO -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Read_8SIPO.spl C:/Users/whony/Desktop/Embedded/week7_3/Read_8SIPO.sym 
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/week7_3/adv.v -lang verilog -prj week7_3 -o Read_8SIPO.spl -module Read_8SIPO -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Read_8SIPO.spl C:/Users/whony/Desktop/Embedded/week7_3/Read_8SIPO.sym 

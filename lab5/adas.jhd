@@ -1,0 +1,3 @@
+MODULE adas
+	SUBMODULE MainTest7Seg
+		INSTANCE XLXI_1

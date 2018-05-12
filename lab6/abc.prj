@@ -1,0 +1,3 @@
+verilog work "Gen_Hz.v"
+verilog work "Decode_7seg.v"
+verilog work "abc.vf"

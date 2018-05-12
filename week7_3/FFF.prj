@@ -1,0 +1,4 @@
+verilog work "SAa.v"
+verilog work "gen_clk.v"
+verilog work "adv.v"
+verilog work "FFF.vf"

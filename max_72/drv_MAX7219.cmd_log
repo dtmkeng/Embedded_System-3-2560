@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ad.vhd -prj max_72 -o drv_MAX7219.spl -module drv_MAX7219 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 drv_MAX7219.spl C:/Users/whony/Desktop/Embedded/max_72/drv_MAX7219.sym 

@@ -1,0 +1,10 @@
+[Inputs]
+xClk_20kHz
+=xDInput[15:0]=
+[Outputs]
+=xSelect[3:0]=
+=xSegment[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Drive_4Dig_7Seg
+

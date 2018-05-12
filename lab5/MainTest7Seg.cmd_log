@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "C:/Users/whony/Desktop/Embedded/lab5/MainTest7Seg.xst" -ofn "C:/Users/whony/Desktop/Embedded/lab5/MainTest7Seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sa.ucf -p xc6slx9-tqg144-2 MainTest7Seg.ngc MainTest7Seg.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MainTest7Seg_map.ncd MainTest7Seg.ngd MainTest7Seg.pcf 
+par -w -intstyle ise -ol high -mt off MainTest7Seg_map.ncd MainTest7Seg.ncd MainTest7Seg.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MainTest7Seg.twx MainTest7Seg.ncd -o MainTest7Seg.twr MainTest7Seg.pcf -ucf sa.ucf 
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/lab5/asads.v -lang verilog -prj lab5 -o MainTest7Seg.spl -module MainTest7Seg -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 MainTest7Seg.spl C:/Users/whony/Desktop/Embedded/lab5/MainTest7Seg.sym 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc as.ucf -p xc6slx9-tqg144-2 MainTest7Seg.ngc MainTest7Seg.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc as.ucf -p xc6slx9-tqg144-2 MainTest7Seg.ngc MainTest7Seg.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MainTest7Seg_map.ncd MainTest7Seg.ngd MainTest7Seg.pcf 
+par -w -intstyle ise -ol high -mt off MainTest7Seg_map.ncd MainTest7Seg.ncd MainTest7Seg.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MainTest7Seg.twx MainTest7Seg.ncd -o MainTest7Seg.twr MainTest7Seg.pcf -ucf as.ucf 
+xst -intstyle ise -ifn "C:/Users/whony/Desktop/Embedded/lab5/MainTest7Seg.xst" -ofn "C:/Users/whony/Desktop/Embedded/lab5/MainTest7Seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc as.ucf -p xc6slx9-tqg144-2 MainTest7Seg.ngc MainTest7Seg.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MainTest7Seg_map.ncd MainTest7Seg.ngd MainTest7Seg.pcf 
+par -w -intstyle ise -ol high -mt off MainTest7Seg_map.ncd MainTest7Seg.ncd MainTest7Seg.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MainTest7Seg.twx MainTest7Seg.ncd -o MainTest7Seg.twr MainTest7Seg.pcf -ucf as.ucf 
+bitgen -intstyle ise -f MainTest7Seg.ut MainTest7Seg.ncd 

@@ -1,0 +1,22 @@
+NET "Clk_50MHz" LOC = P56 | IOSTANDARD = LVTTL ;
+NET "Reset_Onboard" LOC = P38 | IOSTANDARD = LVTTL ;
+NET "xCount<4>" LOC = P134 | IOSTANDARD = LVTTL;
+NET "xCount<5>" LOC = P133 | IOSTANDARD = LVTTL;
+NET "xCount<6>" LOC = P132 | IOSTANDARD = LVTTL;
+NET "xCount<7>" LOC = P131 | IOSTANDARD = LVTTL;
+NET "xCount<8>" LOC = P127 | IOSTANDARD = LVTTL;
+NET "xCount<9>" LOC = P126 | IOSTANDARD = LVTTL;
+NET "xCount<10>" LOC = P124 | IOSTANDARD = LVTTL;
+NET "xCount<11>" LOC = P123 | IOSTANDARD = LVTTL;
+NET "SegmentEnc<2>" LOC = P50 ; // e
+NET "SegmentEnc<3>" LOC = P40 ; // d
+NET "SegmentEnc<7>" LOC = P34 ; // t
+NET "SegmentEnc<4>" LOC = P32 ; // c
+NET "SegmentEnc<0>" LOC = P29 ; // g
+NET "Port_Sel<0>" LOC = P26 ; // Coom.0
+NET "Port_Sel<3>" LOC = P51 ; // Coom.3
+NET "SegmentEnc<6>" LOC = P41 ; // a
+NET "SegmentEnc<1>" LOC = P35 ; // f
+NET "Port_Sel<2>" LOC = P33 ; // Coom.2
+NET "Port_Sel<1>" LOC = P30 ; // Coom.1
+NET "SegmentEnc<5>" LOC = P27 ; // b 

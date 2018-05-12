@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/XXXXX/MainTest7Seg.v -lang verilog -prj XXXXX -o Decode_7Seg.spl -module Decode_7Seg -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decode_7Seg.spl D:/XXXXX/Decode_7Seg.sym 

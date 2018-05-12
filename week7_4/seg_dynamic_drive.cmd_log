@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/whony/Desktop/Embedded/week7_4/seg_dynamic_drive.xst" -ofn "C:/Users/whony/Desktop/Embedded/week7_4/seg_dynamic_drive.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DAS.ucf -p xc6slx9-tqg144-3 seg_dynamic_drive.ngc seg_dynamic_drive.ngd  

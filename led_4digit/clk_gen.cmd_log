@@ -1,0 +1,6 @@
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/led_4digit/clk_gen.v -lang verilog -prj led_4digit -o clk_gen.spl -module clk_gen -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/led_4digit/clk_gen.v -lang verilog -prj led_4digit -o clk_gen.spl -module clk_gen -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+xst -intstyle ise -ifn "C:/Users/whony/Desktop/Embedded/led_4digit/clk_gen.xst" -ofn "C:/Users/whony/Desktop/Embedded/led_4digit/clk_gen.syr" 
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/led_4digit/clk_gen.v -lang verilog -prj led_4digit -o clk_gen.spl -module clk_gen -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/led_4digit/yy.v -lang verilog -prj led_4digit -o CLK_Gen.spl -module CLK_Gen -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 CLK_Gen.spl C:/Users/whony/Desktop/Embedded/led_4digit/CLK_Gen.sym 

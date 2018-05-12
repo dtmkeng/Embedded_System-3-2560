@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/WEEK7_2/DD.v -lang verilog -prj WEEK7_2 -o Clk_2000Hz.spl -module Clk_2000Hz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Clk_2000Hz.spl C:/Users/whony/Desktop/Embedded/WEEK7_2/Clk_2000Hz.sym 

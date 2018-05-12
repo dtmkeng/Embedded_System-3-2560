@@ -1,0 +1,114 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : XXXX.vf
+// /___/   /\     Timestamp : 05/04/2018 17:30:50
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/XXXXX/XXXX.vf -w D:/XXXXX/XXXX.sch
+//Design Name: XXXX
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB4CE_HXILINX_XXXX(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 4'b1111;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+	else if (CE)
+	  {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module XXXX(Clk_50MHz, 
+            Reset_Onboard, 
+            COMM_3, 
+            XLXN_8, 
+            XLXN_9, 
+            XLXN_10, 
+            XLXN_11, 
+            XLXN_12, 
+            XLXN_13, 
+            XLXN_14, 
+            XLXN_15);
+
+    input Clk_50MHz;
+    input Reset_Onboard;
+   output COMM_3;
+   output XLXN_8;
+   output XLXN_9;
+   output XLXN_10;
+   output XLXN_11;
+   output XLXN_12;
+   output XLXN_13;
+   output XLXN_14;
+   output XLXN_15;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire COMM_3_DUMMY;
+   
+   assign COMM_3 = COMM_3_DUMMY;
+   Decode_7Seg  XLXI_1 (.A(XLXN_3), 
+                       .B(XLXN_2), 
+                       .C(XLXN_4), 
+                       .D(XLXN_5), 
+                       .leda(XLXN_9), 
+                       .ledb(XLXN_10), 
+                       .ledc(XLXN_11), 
+                       .ledd(XLXN_12), 
+                       .lede(XLXN_13), 
+                       .ledf(XLXN_14), 
+                       .ledg(XLXN_15), 
+                       .ledt(XLXN_8));
+   Gen_1Hz  XLXI_2 (.Clk_In(Clk_50MHz), 
+                   .Clk_Out(XLXN_1));
+   (* HU_SET = "XLXI_3_0" *) 
+   CB4CE_HXILINX_XXXX  XLXI_3 (.C(XLXN_1), 
+                              .CE(COMM_3_DUMMY), 
+                              .CLR(Reset_Onboard), 
+                              .CEO(), 
+                              .Q0(XLXN_3), 
+                              .Q1(XLXN_2), 
+                              .Q2(XLXN_4), 
+                              .Q3(XLXN_5), 
+                              .TC());
+   VCC  XLXI_4 (.P(COMM_3_DUMMY));
+endmodule

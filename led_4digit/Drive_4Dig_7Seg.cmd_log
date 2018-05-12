@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/led_4digit/dasd.v -lang verilog -prj led_4digit -o Drive_4Dig_7Seg.spl -module Drive_4Dig_7Seg -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Drive_4Dig_7Seg.spl C:/Users/whony/Desktop/Embedded/led_4digit/Drive_4Dig_7Seg.sym 

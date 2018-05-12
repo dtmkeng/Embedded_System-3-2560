@@ -1,0 +1,9 @@
+[Inputs]
+Clk_50MHz
+rstCount
+[Outputs]
+=oData[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel test_Data
+

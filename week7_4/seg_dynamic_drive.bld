@@ -1,0 +1,188 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc DAS.ucf -p xc6slx9-tqg144-3 seg_dynamic_drive.ngc
+seg_dynamic_drive.ngd
+
+Reading NGO file "C:/Users/whony/Desktop/Embedded/week7_4/seg_dynamic_drive.ngc"
+...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "DAS.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "CLOCK_50" LOC = P56 |>
+   [DAS.ucf(1)]: NET "CLOCK_50" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "CLOCK_50" LOC = P56 |> [DAS.ucf(1)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL ;> [DAS.ucf(1)]: NET
+   "CLOCK_50" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "Q_KEY" LOC = P38 |> [DAS.ucf(2)]:
+   NET "Q_KEY" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Q_KEY" LOC = P38 |> [DAS.ucf(2)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL ;> [DAS.ucf(2)]: NET
+   "Q_KEY" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DS18B20" LOC = P24 ;> [DAS.ucf(3)]:
+   NET "DS18B20" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DS18B20" LOC = P24 ;> [DAS.ucf(3)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DS18B20" PULLUP;> [DAS.ucf(4)]: NET
+   "DS18B20" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SEG7_SEL[3]" LOC = P51 ;>
+   [DAS.ucf(5)]: NET "SEG7_SEL[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SEG7_SEL[3]" LOC = P51 ;> [DAS.ucf(5)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SEG7_SEL[2]" LOC = P33 ;>
+   [DAS.ucf(6)]: NET "SEG7_SEL[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SEG7_SEL[2]" LOC = P33 ;> [DAS.ucf(6)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SEG7_SEL[1]" LOC = P30 ;>
+   [DAS.ucf(7)]: NET "SEG7_SEL[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SEG7_SEL[1]" LOC = P30 ;> [DAS.ucf(7)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SEG7_SEL[0]" LOC = P26 ;>
+   [DAS.ucf(8)]: NET "SEG7_SEL[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SEG7_SEL[0]" LOC = P26 ;> [DAS.ucf(8)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SEG7_SEG[7]" LOC = P34;>
+   [DAS.ucf(9)]: NET "SEG7_SEG[7]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SEG7_SEG[7]" LOC = P34;> [DAS.ucf(9)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SEG7_SEG[6]" LOC = P29;>
+   [DAS.ucf(10)]: NET "SEG7_SEG[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SEG7_SEG[6]" LOC = P29;> [DAS.ucf(10)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SEG7_SEG[5]" LOC = P35;>
+   [DAS.ucf(11)]: NET "SEG7_SEG[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SEG7_SEG[5]" LOC = P35;> [DAS.ucf(11)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SEG7_SEG[4]" LOC = P50;>
+   [DAS.ucf(12)]: NET "SEG7_SEG[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SEG7_SEG[4]" LOC = P50;> [DAS.ucf(12)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SEG7_SEG[3]" LOC = P40;>
+   [DAS.ucf(13)]: NET "SEG7_SEG[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SEG7_SEG[3]" LOC = P40;> [DAS.ucf(13)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SEG7_SEG[2]" LOC = P32;>
+   [DAS.ucf(14)]: NET "SEG7_SEG[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SEG7_SEG[2]" LOC = P32;> [DAS.ucf(14)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SEG7_SEG[1]" LOC = P27;>
+   [DAS.ucf(15)]: NET "SEG7_SEG[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SEG7_SEG[1]" LOC = P27;> [DAS.ucf(15)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SEG7_SEG[0]" LOC = P41;>
+   [DAS.ucf(16)]: NET "SEG7_SEG[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SEG7_SEG[0]" LOC = P41;> [DAS.ucf(16)]' could not be found and so the
+   Locate constraint will be removed.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:    18
+  Number of warnings:  15
+
+Total memory usage is 192576 kilobytes
+
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "seg_dynamic_drive.bld"...

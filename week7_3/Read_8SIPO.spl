@@ -1,0 +1,11 @@
+[Inputs]
+Ser_I
+Clk_I
+[Outputs]
+Clk_O
+SH_LD
+=Parl_O[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Read_8SIPO
+

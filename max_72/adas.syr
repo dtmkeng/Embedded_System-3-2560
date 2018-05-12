@@ -1,0 +1,674 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> Reading design: adas.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "adas.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "adas"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : adas
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\whony\Desktop\Embedded\max_72\asds.v" into library work
+Parsing module <test_Data>.
+Analyzing Verilog file "C:\Users\whony\Desktop\Embedded\max_72\adas.vf" into library work
+Parsing module <adas>.
+Parsing VHDL file "C:\Users\whony\Desktop\Embedded\max_72\ad.vhd" into library work
+Parsing entity <drv_MAX7219>.
+Parsing architecture <Behavioral> of entity <drv_max7219>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <adas>.
+Going to vhdl side to elaborate module drv_MAX7219
+
+Elaborating entity <drv_MAX7219> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\whony\Desktop\Embedded\max_72\ad.vhd" Line 50. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\whony\Desktop\Embedded\max_72\ad.vhd" Line 50. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\whony\Desktop\Embedded\max_72\ad.vhd" Line 50. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\whony\Desktop\Embedded\max_72\ad.vhd" Line 50. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\whony\Desktop\Embedded\max_72\ad.vhd" Line 50. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\whony\Desktop\Embedded\max_72\ad.vhd" Line 50. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\whony\Desktop\Embedded\max_72\ad.vhd" Line 50. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\whony\Desktop\Embedded\max_72\ad.vhd" Line 50. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\whony\Desktop\Embedded\max_72\ad.vhd" Line 157. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\whony\Desktop\Embedded\max_72\ad.vhd" Line 189. Case statement is complete. others clause is never selected
+Back to verilog to continue elaboration
+
+Elaborating module <test_Data>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <adas>.
+    Related source file is "C:\Users\whony\Desktop\Embedded\max_72\adas.vf".
+    Summary:
+	no macro.
+Unit <adas> synthesized.
+
+Synthesizing Unit <drv_MAX7219>.
+    Related source file is "C:\Users\whony\Desktop\Embedded\max_72\ad.vhd".
+    Found 3-bit register for signal <driver_state>.
+    Found 4-bit register for signal <state>.
+    Found 8-bit register for signal <dig7_data>.
+    Found 8-bit register for signal <dig6_data>.
+    Found 8-bit register for signal <dig5_data>.
+    Found 8-bit register for signal <dig4_data>.
+    Found 8-bit register for signal <dig3_data>.
+    Found 8-bit register for signal <dig2_data>.
+    Found 8-bit register for signal <dig1_data>.
+    Found 8-bit register for signal <dig0_data>.
+    Found 32-bit register for signal <clk_counter>.
+    Found 1-bit register for signal <load>.
+    Found 1-bit register for signal <clk_out>.
+    Found 32-bit register for signal <counter>.
+    Found 1-bit register for signal <data_out>.
+    Found 16-bit register for signal <command>.
+    Found finite state machine <FSM_0> for signal <driver_state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 26                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 13                                             |
+    | Transitions        | 25                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 11                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | init_1                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <clk_counter[31]_GND_4_o_add_68_OUT> created at line 161.
+    Found 32-bit subtractor for signal <counter[31]_GND_4_o_sub_70_OUT<31:0>> created at line 173.
+    Found 16x8-bit Read Only RAM for signal <parallel[31]_GND_4_o_wide_mux_16_OUT>
+    Found 16x8-bit Read Only RAM for signal <parallel[27]_GND_4_o_wide_mux_17_OUT>
+    Found 16x8-bit Read Only RAM for signal <parallel[23]_GND_4_o_wide_mux_18_OUT>
+    Found 16x8-bit Read Only RAM for signal <parallel[19]_GND_4_o_wide_mux_19_OUT>
+    Found 16x8-bit Read Only RAM for signal <parallel[15]_GND_4_o_wide_mux_20_OUT>
+    Found 16x8-bit Read Only RAM for signal <parallel[11]_GND_4_o_wide_mux_21_OUT>
+    Found 16x8-bit Read Only RAM for signal <parallel[7]_GND_4_o_wide_mux_22_OUT>
+    Found 16x8-bit Read Only RAM for signal <parallel[3]_GND_4_o_wide_mux_23_OUT>
+    Found 1-bit 16-to-1 multiplexer for signal <counter[31]_command[15]_Mux_70_o> created at line 174.
+    Found 32-bit comparator greater for signal <GND_4_o_clk_counter[31]_LessThan_68_o> created at line 160
+    Summary:
+	inferred   8 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred 147 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  10 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <drv_MAX7219> synthesized.
+
+Synthesizing Unit <test_Data>.
+    Related source file is "C:\Users\whony\Desktop\Embedded\max_72\asds.v".
+    Found 32-bit register for signal <roData>.
+    Found 32-bit register for signal <cCounter>.
+    Found 32-bit adder for signal <cCounter[31]_GND_5_o_add_1_OUT> created at line 10.
+    Found 32-bit adder for signal <roData[31]_GND_5_o_add_3_OUT> created at line 13.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  64 D-type flip-flop(s).
+Unit <test_Data> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 8
+ 16x8-bit single-port Read Only RAM                    : 8
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 1
+# Registers                                            : 16
+ 1-bit register                                        : 3
+ 16-bit register                                       : 1
+ 32-bit register                                       : 4
+ 8-bit register                                        : 8
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 10
+ 1-bit 16-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 8
+ 32-bit 2-to-1 multiplexer                             : 1
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <drv_MAX7219>.
+The following registers are absorbed into counter <clk_counter>: 1 register on signal <clk_counter>.
+INFO:Xst:3231 - The small RAM <Mram_parallel[31]_GND_4_o_wide_mux_16_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <parallel<31:28>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_parallel[27]_GND_4_o_wide_mux_17_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <parallel<27:24>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_parallel[23]_GND_4_o_wide_mux_18_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <parallel<23:20>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_parallel[15]_GND_4_o_wide_mux_20_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <parallel<15:12>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_parallel[19]_GND_4_o_wide_mux_19_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <parallel<19:16>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_parallel[11]_GND_4_o_wide_mux_21_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <parallel<11:8>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_parallel[7]_GND_4_o_wide_mux_22_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <parallel<7:4>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_parallel[3]_GND_4_o_wide_mux_23_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <parallel<3:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <drv_MAX7219> synthesized (advanced).
+
+Synthesizing (advanced) Unit <test_Data>.
+The following registers are absorbed into counter <roData>: 1 register on signal <roData>.
+The following registers are absorbed into counter <cCounter>: 1 register on signal <cCounter>.
+Unit <test_Data> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 8
+ 16x8-bit single-port distributed Read Only RAM        : 8
+# Adders/Subtractors                                   : 1
+ 32-bit subtractor                                     : 1
+# Counters                                             : 3
+ 32-bit up counter                                     : 3
+# Registers                                            : 115
+ Flip-Flops                                            : 115
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 10
+ 1-bit 16-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 8
+ 32-bit 2-to-1 multiplexer                             : 1
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <XLXI_1/FSM_1> on signal <state[1:4]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ init_1    | 0000
+ init_2    | 0001
+ init_3    | 0010
+ init_4    | 0011
+ read_data | 0100
+ dig_7     | 0101
+ dig_6     | 0110
+ dig_5     | 0111
+ dig_4     | 1000
+ dig_3     | 1001
+ dig_2     | 1010
+ dig_1     | 1011
+ dig_0     | 1100
+-----------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <XLXI_1/FSM_0> on signal <driver_state[1:3]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ idle     | 000
+ start    | 001
+ clk_data | 010
+ clk_high | 011
+ clk_low  | 100
+ finished | 101
+----------------------
+WARNING:Xst:1293 - FF/Latch <dig6_data_7> has a constant value of 0 in block <drv_MAX7219>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dig7_data_7> has a constant value of 0 in block <drv_MAX7219>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dig5_data_7> has a constant value of 0 in block <drv_MAX7219>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dig4_data_7> has a constant value of 0 in block <drv_MAX7219>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dig3_data_7> has a constant value of 0 in block <drv_MAX7219>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dig2_data_7> has a constant value of 0 in block <drv_MAX7219>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dig1_data_7> has a constant value of 0 in block <drv_MAX7219>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dig0_data_7> has a constant value of 0 in block <drv_MAX7219>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <command_7> has a constant value of 0 in block <drv_MAX7219>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <command_12> has a constant value of 0 in block <drv_MAX7219>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <command_13> has a constant value of 0 in block <drv_MAX7219>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <command_14> has a constant value of 0 in block <drv_MAX7219>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <command_15> has a constant value of 0 in block <drv_MAX7219>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <adas> ...
+
+Optimizing unit <drv_MAX7219> ...
+WARNING:Xst:1293 - FF/Latch <XLXI_1/clk_counter_24> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_23> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_22> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_21> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_20> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_19> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_18> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_17> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_16> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_15> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_14> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_13> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_12> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_11> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_10> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_9> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_8> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_7> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/cCounter_21> (without init value) has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/cCounter_22> (without init value) has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/cCounter_23> (without init value) has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/cCounter_24> (without init value) has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/cCounter_25> (without init value) has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/cCounter_26> (without init value) has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/cCounter_27> (without init value) has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/cCounter_28> (without init value) has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/cCounter_29> (without init value) has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/cCounter_30> (without init value) has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/cCounter_31> (without init value) has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_31> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_30> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_29> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_28> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_27> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_26> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/clk_counter_25> has a constant value of 0 in block <adas>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block adas, actual ratio is 5.
+FlipFlop XLXI_1/driver_state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop XLXI_1/driver_state_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop XLXI_1/driver_state_FSM_FFd3 has been replicated 1 time(s)
+FlipFlop XLXI_1/state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop XLXI_1/state_FSM_FFd4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 174
+ Flip-Flops                                            : 174
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : adas.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 463
+#      GND                         : 1
+#      INV                         : 35
+#      LUT1                        : 58
+#      LUT2                        : 1
+#      LUT3                        : 3
+#      LUT4                        : 85
+#      LUT5                        : 55
+#      LUT6                        : 35
+#      MUXCY                       : 94
+#      MUXF7                       : 2
+#      MUXF8                       : 1
+#      VCC                         : 1
+#      XORCY                       : 92
+# FlipFlops/Latches                : 174
+#      FD                          : 36
+#      FDCE                        : 32
+#      FDE                         : 99
+#      FDR                         : 7
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 1
+#      OBUF                        : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             174  out of  11440     1%  
+ Number of Slice LUTs:                  272  out of   5720     4%  
+    Number used as Logic:               272  out of   5720     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    276
+   Number with an unused Flip Flop:     102  out of    276    36%  
+   Number with an unused LUT:             4  out of    276     1%  
+   Number of fully used LUT-FF pairs:   170  out of    276    61%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    102     4%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk_50MHz                          | BUFGP                  | 174   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.363ns (Maximum Frequency: 229.217MHz)
+   Minimum input arrival time before clock: 4.282ns
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk_50MHz'
+  Clock period: 4.363ns (frequency: 229.217MHz)
+  Total number of paths / destination ports: 4035 / 312
+-------------------------------------------------------------------------
+Delay:               4.363ns (Levels of Logic = 2)
+  Source:            XLXI_2/cCounter_8 (FF)
+  Destination:       XLXI_2/roData_0 (FF)
+  Source Clock:      Clk_50MHz rising
+  Destination Clock: Clk_50MHz rising
+
+  Data Path: XLXI_2/cCounter_8 to XLXI_2/roData_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   1.015  XLXI_2/cCounter_8 (XLXI_2/cCounter_8)
+     LUT6:I0->O            3   0.203   0.879  XLXI_2/cCounter[31]_GND_5_o_equal_3_o<31>3 (XLXI_2/cCounter[31]_GND_5_o_equal_3_o<31>2)
+     LUT6:I3->O           32   0.205   1.291  XLXI_2/cCounter[31]_GND_5_o_equal_3_o<31>4 (XLXI_2/cCounter[31]_GND_5_o_equal_3_o)
+     FDCE:CE                   0.322          XLXI_2/roData_0
+    ----------------------------------------
+    Total                      4.363ns (1.177ns logic, 3.186ns route)
+                                       (27.0% logic, 73.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_50MHz'
+  Total number of paths / destination ports: 53 / 53
+-------------------------------------------------------------------------
+Offset:              4.282ns (Levels of Logic = 2)
+  Source:            Onboard_Reset (PAD)
+  Destination:       XLXI_2/roData_0 (FF)
+  Destination Clock: Clk_50MHz rising
+
+  Data Path: Onboard_Reset to XLXI_2/roData_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   1.222   1.133  Onboard_Reset_IBUF (Onboard_Reset_IBUF)
+     INV:I->O             32   0.206   1.291  Onboard_Reset_inv1_INV_0 (Onboard_Reset_inv)
+     FDCE:CLR                  0.430          XLXI_2/roData_0
+    ----------------------------------------
+    Total                      4.282ns (1.858ns logic, 2.424ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_50MHz'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            XLXI_1/clk_out (FF)
+  Destination:       CLK (PAD)
+  Source Clock:      Clk_50MHz rising
+
+  Data Path: XLXI_1/clk_out to CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  XLXI_1/clk_out (XLXI_1/clk_out)
+     OBUF:I->O                 2.571          CLK_OBUF (CLK)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clk_50MHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_50MHz      |    4.363|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.34 secs
+ 
+--> 
+
+Total memory usage is 284572 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   49 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

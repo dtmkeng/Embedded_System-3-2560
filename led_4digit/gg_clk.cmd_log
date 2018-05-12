@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/whony/Desktop/Embedded/led_4digit/gg_clk.v -lang verilog -prj led_4digit -o gg_clk.spl -module gg_clk -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+xst -intstyle ise -ifn "C:/Users/whony/Desktop/Embedded/led_4digit/gg_clk.xst" -ofn "C:/Users/whony/Desktop/Embedded/led_4digit/gg_clk.syr" 

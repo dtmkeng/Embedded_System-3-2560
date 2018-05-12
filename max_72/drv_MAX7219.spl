@@ -1,0 +1,8 @@
+[Inputs]
+clk
+=parallel[31:0]=
+[Outputs]
+clk_out
+data_out
+load
+[BiDir]

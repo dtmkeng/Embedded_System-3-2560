@@ -1,0 +1,9 @@
+[Inputs]
+Clk_50MHz
+[Outputs]
+Clk_20Hz
+Clk_20kHz
+[BiDir]
+[ATTRIBUTES]
+VeriModel CLK_Gen
+
