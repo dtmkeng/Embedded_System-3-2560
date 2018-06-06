@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri May 25 14:24:33 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Output_LED<0>" LOCATE = SITE "P134" LEVEL 1;
+COMP "Output_LED<1>" LOCATE = SITE "P133" LEVEL 1;
+COMP "Clk_50MHz" LOCATE = SITE "P56" LEVEL 1;
+COMP "Monitor_LED" LOCATE = SITE "P131" LEVEL 1;
+COMP "Input_SWx" LOCATE = SITE "P38" LEVEL 1;
+COMP "xReset" LOCATE = SITE "P51" LEVEL 1;
+SCHEMATIC END;
+

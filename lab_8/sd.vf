@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : sd.vf
+// /___/   /\     Timestamp : 05/25/2018 14:16:14
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/whony/Desktop/desktop/Embedded/lab_8/sd.vf -w C:/Users/whony/Desktop/desktop/Embedded/lab_8/sd.sch
+//Design Name: sd
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module sd(Clk_50MHz, 
+          Input_SWx, 
+          xReset, 
+          Monitor_LED, 
+          Output_LED);
+
+    input Clk_50MHz;
+    input Input_SWx;
+    input xReset;
+   output Monitor_LED;
+   output [1:0] Output_LED;
+   
+   wire Monitor_LED_DUMMY;
+   
+   assign Monitor_LED = Monitor_LED_DUMMY;
+   fsm  XLXI_1 (.Clk(Monitor_LED_DUMMY), 
+               .Input_X(Input_SWx), 
+               .Reset(xReset), 
+               .Output_HK(Output_LED[1:0]));
+   Clk_1Hz  XLXI_2 (.Clk_In(Clk_50MHz), 
+                   .Clk_Out(Monitor_LED_DUMMY));
+endmodule

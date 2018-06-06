@@ -1,0 +1,7 @@
+[Inputs]
+Clk
+Reset
+Input_X
+[Outputs]
+=Output_HK[1:0]=
+[BiDir]
